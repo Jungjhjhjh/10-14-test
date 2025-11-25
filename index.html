@@ -3,205 +3,239 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>길거리를 떠도는 유기견,<br>
-	보호소 신고 괜찮을까?</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+	<title>PATCHWORK</title>
 	<style type="text/css">
-
-	html {
-  font-family: "Noto Sans KR", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  line-height:1.6;
-  font-size:16px;
+		@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
 }
- 		header,body,section{background: #bfff00;}
- 		html{word-break: keep-all;}
-		body,header,h1,h2,h3,p,ol,ul{margin: 0;}
-		body{}
-		header,footer{padding-top: 200px;}
+
+	@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 900;
+    font-style: bold;
+}
+
+		html{font-family: 'Pretendard-Regular';}
+		html{word-break: keep-all;}
+		html,body,header,h1,h2,h3,p,ol,ul{margin: 0;}
+
+		header,footer{padding-top: 450px;}
+		header{padding: 300px 0px}
 		footer{padding-bottom: 100px;}
-		section{padding-top: 200px; padding: 100px 0px;}
+		
+		section{background: ; }
 
-		.wrap{width: 1000px; margin: auto; position: relative; }
+		.wrap{width: 600px; margin: auto; position: relative; }
+		.yellow{background-color: #D8ff8b;}
+		.gray{background-color: #343434;}
+		.center-text{text-align: center;}
 
-		h1{font-weight: 800; font-size:3rem; padding-bottom: 40px;}
+		h1{font-family: 'Pretendard-Black';font-weight: 800; font-size:3rem; padding-bottom: 40px;}
+	
 		img{width: 100%;display: block;height:auto;}
-		p{font-size:1.2rem;padding-top: 15px; padding-bottom: 20px;}
-		header{}
-		h2{font-weight:800;font-size:3rem;line-height:1.3;margiin: 50px 0px 20px; 
-			}
+		p{font-size:1.1rem;padding-top: 30px; padding-bottom: 50px; line-height: 1.6;}
 
-			.left-spacing{padding-left:150px;}
-			.right-spacing{padding-right:400px;}
-			.center-spacing{padding-left:100px;padding-right:100px; text-align: center;}
-			.black{background: black}
-			.black h2{color: white}
-			.black p{color: white}
-			.magenta{background: magenta;}
-			.bg-white{background: white;}
-			.bg-black{background: black;}
-			.bg-dog{background: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdndlNHhmN2M2MGVpdTQ5aW03eHg0enRtZ2J2N2FxcHZldHpqaHI5NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dams6JwLPPePABALVI/giphy.gif); background-attachment: fixed;
-				background-size:100px auto;}
-			.white{color:white}
-			.flex{display: flex; justify-content: space-between;}
-			ul,il{list-style: none;}
-			ul li a{text-decoration:none;
-					display:block;
-					padding: 8px 12px;
-					color:white; }
-			ul li a:hover{background: white; color: black;
-					transition: all 1s;}
-			.bg-header{background: url('file:///Users/jeongjiho/Documents/%E1%84%86%E1%85%AE%E1%84%8C%E1%85%A6%20%E1%84%91%E1%85%A9%E1%86%AF%E1%84%83%E1%85%A5/dmd%20dog.jpg');
-				background-size: cover;
-				background-position:center;}
-			header{padding: 250px 0px;}
-			header h1{font-size: 2.5rem; 
-					animation:glow 4s;}
-			header h2{font-size:1rem; }
-			/*css animation definition*/
-			@keyframes glow{
+		header{display: block; unicode-bidi: isolate;}
+		h2{font-family: 'Pretendard-Black';font-weight:800;font-size:3rem;line-height:1.3;
+			margin: 194px 0px 20px;}
+
+		.left-spacing{padding-left:200px;}
+		.right-spacing{padding-right:180px;}
+		
+		.black{background: black}
+		.black h2{color: white}
+		.black p{color: white}
+		.magenta{background: magenta;}
+		.bg-white{background: white;}
+		.bg-black{background: black;}
+		.bg-patch{background: url(start.png);
+			background-size: cover;
+			background-position: center;}
+		.bg-mount{background: url(mount.png);
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;}
+		.bg-dbfjq{background: url(dbfjq.png);
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+			height: 800px;}
+		header{padding: 350px 0px}
+		.white{color:white}
+		.red{color: red; font-size: 1.3rem;}
+		.neo{color:#D8ff8b}
+		.flex{display: flex; justify-content: space-between;}
+		.big{font-size:5rem;}
+		.white-box {
+    background-color:white;
+    padding: 10px 20px;
+    display: inline-block;
+	border: 0.5px solid black;
+	margin-top: 200px;}
+		.white-box1 {
+    background-color:white;
+    padding: 10px 20px;
+    display: inline-block;
+	border: 0.5px solid black;
+	}
+		background-size: cover;
+		background-position:center;}
+		header{padding: 250px 0px;}
+		header h2{font-size:1rem; }
+		header .wrap {
+    text-align: center;}
+
+		/*css animation definition*/
+		@keyframes glow{
 				from{text-shadow: 0px 0px 0px #bfff00;}
 				to{text-shadow: 0px 0px 13px #bfff00;}
 			}
-	</style>
-
-</head>
+		ul,il{list-style: none;}
+		ul li a{text-decoration: none;
+				display:block;
+				padding: 8px 12px;
+				}
+			footer{padding: 0px 250px;}
+		
+		}
+    </style>
+    </head>
 <body>
-	<nav class="bg-black">
+	<nav>
 		<div class="wrap flex">
 			<div class="logo">
-				<h1 style="font-size: 1.3rem; color:white;padding: 8px 12px; 
-					cursor: pointer;">유기견 신고 괜찮을까?</h1>
-			</div>
-			<ul class="flex" style="font-size:0.8rem;">
-				<li><a href="#">매년 발생</a></li>
-				<li><a href="#">유기동물 수</a></li>
-				<li><a href="#">유기동물 안락사 제도</a></li>
-				<li><a href="#">입양된 유기동물 비율</a></li>
-				<li><a href="#">신고 안 할 경우</a></li>
-				<li><a href="#">해외와 비교</a></li>
-				<li><a href="#">제도적 개선점</a></li>
-				<li><a href="#">신고자의 행동들</a></li>
-				<li><a href="#">보호소 신고 필요</a></li>
-				<li><a href="#">보호소 찾기</a></li>
-	</nav>
-	<header class="bg-header">
-		<div class="wrap">
-		<p class="center-spacing">망설이게 만드는 안락사 제도</p>
-		<h1 class="center-spacing" style="padding-bottom: 100px; 
-		animation: glow 4s infinite alternate linear;">길거리를 떠도는 유기견,<br>
-	보호소 신고 괜찮을까?</h1>
-	
-	</div>
-</header>
-	<section class="black">
-		<div class="wrap">
-		<img src="1. dmd dog.png">
-		<h2 class="left-spacing" style="padding-top: 20px;">매년 10만 마리 유기동물 발생</h2>
-		<p class="left-spacing">농림축산식품부에 따르면
-매년 약 10만 마리의 유기 동물이 발생한다.<br>
-2024년에는 106,824마리의 유실동물이 발생했다.<br>
-이는 보호소에 입소된 동물 기준이며
-실제로는 더 많은 유기 동물이 길거리를 떠돌고 있다.</p>
-	<img src="2. dmd dog 2.png">
-	</div>
-</section>
+			<h1 style="font-size:2rem; padding-bottom: 0;">PATCHWORK</h1>
+		</div>
+			<ul class="flex">
+				<li><a href="#">의미</a></li>
+				<li><a href="#">이집트</a></li>
+				<li><a href="#">유럽</a></li>
+				<li><a href="#">미국</a></li>
+				<li><a href="#">현대</a></li>
+			</ul>
+		</div>
 	<section>
+	<header class="bg-patch">
 		<div class="wrap">
-			<h2 class="right-spacing">점점 줄어들고 있는<br> 보호센터 입소 유기동물 수</h2>
+			<h1 class="center-spacing center-text big neo" style="padding-bottom: 50px;">
+			PATCHWORK</h1>
+			<p class="center-spacing center-text white-box1">패치워크의 역사와 유래에 대해 알아봅시다.</p>
+		</div>
+	</header>
+	</section>
+	<section class="yellow" style="text-align: center;">
+
+		<div class="wrap">
+		</div>
+	</section>
+	<section class="yellow" style="text-align: center;">
+		<div class="wrap">
 			
-			<p class="right-spacing">과연 매년 버려지는 유기동물의 수가 줄어들고 있는 걸까?</p>
-			<img src="3. dmd graph.png" style="margin-bottom: 20px;">
-		</div>
-	</section>
-	<section style="background: url('https://i.pinimg.com/736x/61/af/43/61af435b33594fcf5f27b8b34fd71285.jpg');
-	background-size:cover;background-attachment:fixed;">
-		<div class="wrap">
-		<h2 class="left-spacing white" style="text-shadow: 0px 0px 4px black;">유기동물 안락사 제도</h2>
-		<p class="left-spacing white" style="margin: 20px 0px 20px; text-shadow: 0px 0px 4px black;">현행 동물보호법에 따르면
-유기동물 보호기간은 단 10일.<br>
-서울시는 입양 대기 10일을 추가한 20일로 시행 중,
-10일이 지나면 대부분 안락사 대상이 된다.</p>
-	<img src="4. dmd cat.png">
-	
-	</div>
-	</section>
-	<section>
-		<div class="wrap">
-		<h2 class="right-spacing">작년 기준 입양된 유기동물의 비율은 약 24%에 불과</h2>
-		<p class="right-spacing">점점 많은 사람들이 유기 동물을 발견해도<br>
-신고한 동물이 안락사당할 것을 우려해
-신고를 꺼리기 시작하고 있다.<br>특히 노령견, 질병견은 입양 확률이 매우 낮아 생명 유지가 어렵다.<br>
-입양당하는 유기견 중 노령견의 비율은 25%가 채 되지 않아<br>어린 개체들의 입양률인 60%에 비해 현저히 낮다.</p>
-		<img src="6. dmd dog.png">
-	</section>
-	<section class="bg-dog">
-		<div class="wrap">
-			<h2 class="left-spacing bg-white">유기동물을 신고하지 않을 경우</h2>
-			<p class="left-spacing bg-white" style="margin: 20px 0px 20px">
-				교통사고 (로드킬), 질병 감염, 동물 학대 위험 등으로 고통스러운 죽음 맞을 확률이 높다.<br>
-				반면에 보호소는 최소한의 안전과 의료 지원을 제공한다.<br>또한 보호소는 주인을 찾을 수 있는 유일한 공식 절차이기도 하다. </p>
-			<img src="5. dmd dog.png">
-	</div>
-	</section>
-	<section class="black";>
-		<div class="wrap">
-		<h2 class="right-spacing">해외의 경우와 비교했을 때</h2>
-		<p class="right-spacing">영국: 칩 추적 시스템으로 재회율 80% 이상<br>
-독일: 정부의 보호-입양-후속관리 시스템<br>
-한국: 구조는 활발하지만 입양 시스템이 약함. </p>
-
-		<img src="7. dmd cat.png">
-	</div>
-	</section>
-	<section class="black";>
-		<div class="wrap">
-			<h2 class="left-spacing">제도적 개선점</h2>
-			<p class="left-spacing">제로 안락사 정책, 입양 전 교육 의무화, 공공 보호소 질적 관리 강화 등 제도적 개선이 시급하다.<br>
-			신고 후 본인이 일정 기간 돌보는 형태인 임시보호 제도를 강화하는 방법도 있다.</p>
-			<img src="8. dmd dog.png">
-	</div>
-	</section>
-	<section>
-		<div class="wrap">
-			<h2 class="left-spacing">안락사 확률 줄이기 위해<br> 신고자가 할 수 있는 행동들</h2>
-			<p class="left-spacing">SNS 통한 입양 홍보
-	임시 보호 (위탁 보호자 신청)
-	보호소 후원 및 자원봉사
-	등<br> 신고 후 행동으로 안락사 확률을 줄일 수 있다.</p>
-			<img src="9. dmd dog.png">
+			<p class="center-spacing center-text white-box">패치워크가 무슨 뜻일까?</p>
+			<p class="center-spacing center-text red">패치워크(patchwork):
+			<p class="center-spacing center-text">바느질감의 일종 / 수예의 한 종류<br>
+				작은 천 조각들을 이어서 하나의 큰 천이나 직물을 만드는 것<br>반복 패턴에 기반을 두는 것이 일반적
+				<br>옷감의 재활용에서 시작된 실용적인 방법</p>
 		</div>
 	</section>
 	<section>
 		<div class="wrap">
-			<h2 class="left-spacing">가까운 보호소 신고 통해<br>유기동물 보호, 지원 필요</h2>
-			<p class="left-spacing">신고를 배제하기보다
-	신고 이후의 구조, 입양, 관리 시스템
-	강화하기 위한 노력이 필요하다.<br>
-	한 생명을 살리고 싶어 신고하지 않으면
-	또 다른 방치로 이어질 수 있다.</p>
-			<img src="10. dmd dog.png">
-	</div>
-</section>
+			<h2 class="center-spacing center-text">패치워크는 언제, 어디서<br>처음 만들어졌을까요?</h2>
+			<p class="center-spacing center-text" style="font-size: 1.3rem;">고대 이집트로 거슬러 올라가 패치워크의 흔적을 찾아봅시다.</p>
+		</div>
+	</section>
+	<section class="bg-mount white" style="text-shadow: 0.5px 0.5px 2px black">
+		<div class="wrap">
+			<h2 class="center-spacing center-text"style="padding-top: 200px;">절약을 위한 패치워크</h2>
+			<p class="center-spacing center-text">이집트는 패치워크라는 개념이 고고학적으로 발견된 가장 오래된<br>장소예요.
+				천이나 직물은 인류 문명 이전부터 사용되었지만 조각 천을<br>이어 만든 구조물은 고대 이집트에서 가장 먼저 발견되었어요.</p>
+			<p class="center-spacing center-text">기원전 3400년 전 유물인 이집트 고대 벽화와 미라를 포장한<br>천 안에서
+					조각 천을 이어붙인 직물을 찾아볼 수 있어요. 이 시기<br>이집트 사람들은 린넨 직조 기술을 고도로 발전시킨 상태였기 때문에<br>천을 자르고 이어붙여 새로운 형태를 만드는 것이 가능했어요.</p>
+			<p class="center-spacing center-text" style="padding-top: 300px;">고대 이집트는 직물 생산이 꽤 발달한 상태였지만 천은 아직<br>
+				귀한 자원이었어요. 그래서 옷이 닳거나 찢어져도 남은 천을 덧대<br>재활용하기 위한 실용적 이유 때문에 패치워크가 등장했어요. 
+			<p class="center-spacing center-text">이집트에서는 사후 세계가 중요하게 여겨졌기에 미라를 감싸는 옷을<br>정성스레 만들었는데 이 중 	일부가 조각을 조합한 패치형<br>형태를 띄고 있기도 해요.</p>
+			<img src="1. egypt.png">
+			<p class="center-spacing center-text"style="padding-top: 90px;">이때는 기능적 용도로만 패치워크를 사용했기 때문에 현존하는<br>패치워크처럼
+				정교하거나 정형화된 패턴은 찾아볼 수 없어요.<br>우리가 알고 있는 예술적 패턴을 가진 패치워크 퀼트는<Br>
+			중세 유럽 이후로 조금씩 발달하기 시작했어요.</p>
+		</div>
+	</section>
 	<section>
 		<div class="wrap">
-		<h2 class="right-spacing">가까운 보호소를 찾아보세요.</h2>
-		<p class="right-spacing">서초동물사랑센터 02-6956-7980 (서초구)<br>
-노원반려동물문화센터 02-933-8500 (노원구)<br>
-내품애센터 02-330-3821 (서대문구)<br>
-구로댕냥이네 02-2636-7649 (구로구)<br>
-강동리본센터 070-4163-7350 (강동구)<br>
-
-우리지역 동물보호센터 찾기
-→ animal.go.kr
-(국가동물보호정보시스템)
-</p> </div>
+			<h2 class="center-spacing">중세 유럽에서 발생한 패치워크의 발전</h2>
+				<p class="right-spacing">중세 유럽으로 넘어온 패치워크는 수선 기술을 넘어<br>장식용 의미를 가지게 됐어요.
+				  	 가난한 계층에게는<br>직물이 사치였기 때문에 옷을 오래 입고 기워 입는<br>문화가 자연스러워졌어요. 서양에서는<br>
+				   	'patched'라는 단어가 가난한, 누더기를 입은 이라는 의미를 가지게 되기도 했죠. 이처럼 패치워크는
+				   	생활 속<br>절약을 위해 사용되는 것이 대부분이었어요.</p>
+			 	<p class="right-spacing" >11~13세기 십자군 원정으로 유럽이 중동과 비잔틴의<br>직물
+			 		문화를 접하게 되며 모자이크와 기하학적 패턴을 유럽도 사용하게 되었어요. 특히 기하학적<br>문양을 직물에 구현하려는 시도가
+					중세 유럽의<br>패치워크에 영향을 주었어요.</p>
+				<img src="jungse.png">
+				<p class="center-spacing center-text">패치워크는 가난한 사람만의 문화가 아니었어요. 성직자나<br>종교 단체들은 성직 복식과
+					성물 보관용 천을 직접 제작하곤 했는데<br>이때 직물이 비쌌기 때문에 작은 조각까지 버리지 않고<br>보관했어요.
+					나중에 이를 오늘날의 콜라주 형태로 조합하여<br>하나의 큰 망토나 제단보를 만들곤 했어요.<br>이는 기능보다는 장식적, 의례적 가치 때문에
+					이루어진<br>초기 예술적 패치워크로 평가되고 있어요.</p>
+				</div>
+			</section>
+				<section class="bg-dbfjq">
+    			<div class="wrap">
+       			 </div>
+				</section>
+				<section>
+				<p class="center-spacing center-text" style="padding-top: 200px;">중세 말에는 직물의 가격이 저렴해지고 종류도 다양해지며<br>
+					패치워크를 빈틈을 메우는 용도로만 사용하지 않고 의도적으로<br>패턴을 만드는 용도로 사용하기 시작해요. 
+				<p class="center-spacing center-text">영국과 프랑스의 귀족들은
+					실크 천을 이어붙여 식탁보나<br>벽걸이를 만들어 소장하기도 했어요. 바로 이 흐름이<br>나중에 식민지인 미국까지 이어져
+					18, 19세기 미국<br>퀼트 문화의 출발점이 됐어요.</p>
+		</div>
 	</section>
-	<footer class="center-spacing"><div class="wrap">길거리를 떠도는 유기견, 보호소 신고 괜찮을까?&copy;2025 정지호</div> </footer>
+	<section class="gray white">
+		<div class="wrap">
+			<h2 class="center-spacing center-text" style="padding-top: 200px;">19세기 미국의 퀼트 문화</h2>
+			<p class="center-spacing center-text">18세기 후반부터 19세기는 유럽에서 이주한 정착민들이 미국에 농가를<br>
+				세우던 시기였어요. 산업화 이전이라 천이 귀했고 수입 원단은 굉장히<br>비쌌어요. 여성들은 헌 옷이나 자투리 천 조각을 재활용해서
+			새로운 천을<br>만들기 시작했고 이게 바로 미국 퀼트 문화의 시작이 되었어요.</p>
+			<p class="center-spacing center-text">특히 흑인 여성들은 노예 신분으로서 천을 구하기 어려워 주인 집의<br>
+			헌 천을 모아 퀼트를 만들었어요. 이 중 일부는 비밀 메시지를 담은<br>
+			코드 퀼트(Code Quilt)로도 알려져 있어요. 지하철도와 같은 탈출 통로<br>
+			에서 지도나 신호 역할을 했다는 설화 같은 이야기도 전해지고 있어요. </p>
+			<img src="usa1.png">
+			<p class="right-spacing" style="padding-top: 40px;">
+				여성들은 집안일과 육아에 묶여 있었지만, 
+				퀼트를 통해<br>창의성을 발휘하고 이웃 여성들과 소통했어요.
+				농한기가<br>찾아오면 마을 여성들이 모여 퀼트를 함께 만드는<br>
+				퀼팅 비(Quilting Bee)라는 모임을 열곤 했어요.<br>
+				이로 인해 퀼팅은 여성들의 연대와 우정을 상징했어요.</p>
+			<p class="right-spacing" style="padding-top: 200px;">
+				대표적인 미국 전통 퀼트 패턴에는 가정과 따뜻한 불빛을 의미하는 Log Cabin(통나무집), 
+				희망과 신앙을<br>상징하는 별 패턴, 결혼을 축하하고 사랑과 연합을<br>뜻하는 더블 웨딩 링이 있어요.</p>
+			<p class="right-spacing"style="padding-top: 200px;">이처럼 퀼트는 만드는 사람의<br>
+				가치관, 신앙, 가족사를 드러내는<br>시각적 기록물이 되었어요.
+				집에 상주해야<br>했던 여성들이나 노예 신분이었던<br>흑인들이 억압 속에서 자유를<br>염원하는 예술적 상징물로서<br>
+			사용하기도 했어요.</p>
+		</div>
+	</section>
+	<section>
+		<div class="wrap">
+			<h2 class="center-spacing center-text">현대의 지속가능한 패치워크</h2>
+			<img src="guseo.jpg">
+			<p class="center-spacing center-text">1971년 뉴욕 휘트니 미술관에서 열린 "Abstract Design in<br>
+				American Quilts" 전시 이후 미국뿐만 아니라 유럽, 일본 등에서도<br>아트 퀼트 장르가 생겨났어요. 
+				퀼트는 모더니즘 회화와 동등한 시각예술로 다뤄지게 되었고 조형적 패턴, 실험적 색감, 추상적 메시지를<br>
+				담은 여러가지 퀼트 작품들이 전세계 곳곳에서 제작되기 시작했어요.</p>
+			<img src="whitney.jpg">
+			<p class="right-spacing" style="padding-top: 100px;">산업화와 함께 기성 제품이 많아졌지만 사람들은<br>손으로 만드는 따뜻함을 다시 찾기 시작했어요.<br>
+				1980~90년대엔 미국, 영국, 일본에서 패치워크<br>취미 문화가 크게 퍼졌고 잡지나 패턴북 클래스가<br>생겨나며 퀼트 커뮤니티가 다시 활발해졌어요.<br> 이 시기의 패치워크는 전통 패턴을<br>현대적으로 재해석하거나 다양한 천 재질을 섞어<br>인테리어용으로도 발전했어요.</p>
+			<p class="left-spacing" style="padding-top: 100px;padding-bottom: 200px;">최근 패치워크는 버려지는 천을 다시 이어 생명을<br>주는 기법으로 환경, 윤리적 소비와 연결돼요.<br>패션 브랜드들도 업사이클링 라인에서 패치워크를<br>적극 활용하고 있어요. 지금의 패치워크는 단순한 공예<br>가 아니라 환경적 가치를 살리고 개셩 표현을 동시에<br>할 수 있는 소중한 문화로 여겨져요.<br>나만의 매력적인 패치워크를 만들어 빈티지한<br>감성과 환경을 동시에 챙겨보는 건 어떨까요?</p>
+			<img src="last.jpg">
+		</div>
+	</section>
 
 </body>
+<footer>
+</footer>
 </html>
